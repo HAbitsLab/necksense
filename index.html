@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>VibroScale</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Intro-->
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">                               
+             <img class="image center max-width-800" src="img/0.png">                                               
+            <p class="text">
+              <a target="_blank" href="https://www.northwestern.edu/"><img class="image image-wrap-text max-width-70" src="img/NU logo.png"></a>
+              <a target="_blank" href="http://www.thehabitslab.com/"><img class="image image-right-wrap-text max-width-70" src="img/Habits lab logo.png"></a>
+              <a target="_blank" href="http://users.eecs.northwestern.edu/~szh702/">Shibo Zhang,</a>
+              <a target="_blank" href="https://www.linkedin.com/in/yuqi-zhao-70758b14a/">Yuqi Zhao,</a>
+              <a target="_blank" href="http://users.eecs.northwestern.edu/~dtn419/">Dzung Nguyen,</a>
+              <a target="_blank" href="https://scholar.google.com/citations?user=QW6Ro8IAAAAJ&hl=en">Runsheng Xu,</a>             
+              <a target="_blank" href="https://www.cs.dartmouth.edu/~sougata/">Sougata Sen,</a>
+              <a target="_blank" href="http://kamoamoa.eecs.northwestern.edu/">Josiah Hester,</a>
+              <a target="_blank" href="http://www.nalshurafa.com/">Nabil Alshurafa</a><br>
+              <!-- <a target="_blank" href="javascript:void(0)">Department of Preventive Medicine</a><br> -->
+              <!-- <a target="_blank" href="javascript:void(0)">Department of Computer Science</a><br> -->
+              Northwestern University, HABits Lab<br>
+              Chicago, IL, USA<br>
+            <a class="text text-middle" href="http://thehabitslab.com/assets/papers/67.pdf"><strong>[Paper Download]</strong></a><br><br><br><br><br>
+            </p>        
+
+          </div>
+        
+         
+
+
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+                  
+            
+             <p class="text">
+              
+              <img class="image image-right-wrap-text max-width-480" src="img/3.png">
+              
+              <strong>Prevalence of obesity in USA:</strong> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <br><br><br>
+                Children: 31.2% of children in age between 10 and 17 are overweight or obese;<br><br>
+                Adults: 39.6% of adults are obese.
+              <br>
+              <br>
+            </p>
+
+
+          <p class="text">
+          Providing eating-related interventions requires automatic eating detection methods (validated in free-living settings).<br><br>
+          We present the design, implementation, and evaluation of a multi-sensor, low-power necklace, NeckSense, for automatically and unobtrusively capturing fine-grained information about an individual’s eating activity and eating episodes, across an entire waking day in a naturalistic setting. NeckSense fuses and classifies the proximity of the necklace from the chin, the ambient light, the Lean Forward Angle, and the energy signals to determine chewing sequences, a building block of the eating activity. It then clusters the identified chewing sequences to determine eating episodes.<br><br>
+          </p>
+         
+          <p class="text">
+          <img class="image image-wrap-text max-width-140" src="img/4.png">
+          Novel <strong>neck-worn</strong> device with multiple embedded sensors:<br>
+          &nbsp &nbsp… infer eating behavior from <strong>contactless</strong> sensors<br>
+          &nbsp &nbsp… targeting the <strong>obesity</strong> problem and tested with people with <strong>obesity</strong><br>
+          &nbsp &nbsp… validated in <strong>real-world</strong> setting using wearable camera for <strong>270 hrs in-the-wild</strong><br>
+          &nbsp &nbsp… provide <strong>data</strong> and <strong>code</strong> to the community
+          </p>
+
+          
+
+          </div>
+        </div>
+        
+        <!--End Intro-->
+        <!-------------------------------------------------------------------------------------------->
+       <!-------------------------------------------------------------------------------------------->
+        <!--Start Text with Centered Image and Table
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Problem Statement</h2>
+            <hr>
+            <p class="text">
+              Do we have a method to utilize the powerful sensing capability of an everyday smartphone and turn it into a weighing scale?
+            </p>
+          </div>
+        </div>-->
+
+
+        <!-------------------------------------------------------------------------------------------->
+        
+        <!--Start Text around Image-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Device and Implementation</h2>
+            <hr>
+            <p class="text">          
+            <img class="image center ax-width-800" src="img/6.png">
+            <br>
+            We use multiple sensors to capture eating:&nbsp &nbsp &nbsp &nbsp<br><br>
+
+             <strong>1. Proximity sensor: </strong>to allow us to detect nearby objects without any physical contact by emitting a beam of electromagnetic radiation, and look for changes in the return signal. Because the sensor is oriented towards the chin, changes in the return signal represent the relative distance from the sensor to the chin, and from the signal we can capture the periodicity of the chewing behavior.<br><br>
+            <strong>2. Ambient light sensor:</strong> acts as a proxy to feeding gestures, where the ambient light drops when the users hand approach the mouth.<br><br>
+            <strong>3. IMU sensor:</strong> used to calculate a lean forward angle that allows us to know if a person is leaning forward to take a bite.<br><br>
+            Collectively, these sensors are used to detect an eating episode.
+            
+            </p>
+            <p class="text">
+            <br>
+            Below video illustrates a use case of NeckSense.
+            </p>
+          </div>
+        </div>
+       
+       <!--Start Text with Images and Videos-->
+        <!-- <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Text with Images and Videos (TODO)</h2>
+            <hr>
+            <p class="text">
+              This is a video recording of our experiment.This is a video recording of our experiment.This is a video recording of our experiment.This is a video recording of our experiment.This is a video recording of our experiment.
+            </p>
+          </div>
+        </div> -->
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <video preload controls autoplay loop muted playsinline class="image">
+              <source src="vid/apple_prox.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch-2 flex-column">
+            <p class="text">
+            </p>
+          </div>
+        </div>
+        
+        <!--End Text with Images and Videos-->
+
+
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Sensor Signals and Modeling</h2>
+            <hr>
+            <img class="image max-width-800" src="img/7.png">  
+            <p class="text">
+              <img class="image image-right-wrap-text max-width-400" src="img/8.png"> 
+              <br><br><strong>The NeckSense would capture four signals:</strong><br><br>
+              <strong>1.</strong> Chewing periodicity signals<br>
+              <strong>2.</strong> Feeding gesture signals<br>
+              <strong>3.</strong> Bite signals<br>
+              <strong>4.</strong> Energy-based signals <br>
+              <br><br><br><br><br>
+              We use a prominent peak finding algorithm to obtain chewing segments, and use the sensor data to extract features for each segment. <!-- These features included statistical features, frequency-based features as well as periodic subsequence features and time of dayfeature for each segment. --> Then we use an XGBoost classifier to confirm whether the candidate segment is indeed a chewing sequence, and combine them into eating episode prediction.
+           </p>            
+          </div>
+        </div>
+        <!-- 
+        <div class="flex-row">
+          <p class="text">
+              This relative induced intensity 𝐼 is used to build a linear regression model, which we use to predict the weight of the object. The pipeline above pictorially presents the entire process. 
+           </p>                                                                     
+        </div>
+             -->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Experiments and Results</h2>
+            <hr>
+            
+            <p class="text">
+             <strong>We performed the following EXPLORATORY study:</strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            </p>
+            <img class="image center max-width-600 add-top-margin-small" src="img/9.png">
+            <br><br><br>
+            <p class="text">
+              <strong>We performed the following FREE-LIVING study:</strong>
+            </p>
+            <img class="image center max-width-600 add-top-margin-small" src="img/10.png">
+            <br><br><br>
+
+            <p class="text">
+              <strong>The following figures indicate proximity signals at different locations during chewing:</strong>
+            </p>
+            <img class="image center max-width-800 add-top-margin-small" src="img/12.png">
+            <img class="image center max-width-850 add-top-margin-small" src="img/13.png">
+
+            <p class="text">
+             <br><br><strong>We achieved:</strong><br>
+               &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp… <strong>82%</strong> Average F-score in the <strong>exploratory</strong> study.<br>
+               &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp… <strong>77%</strong> Average F-score in the <strong>free-living</strong> study.
+            </p>
+            
+            <p class="text">
+              <img class="image image-right-wrap-text max-width-400" src="img/11.png"> 
+              <br><br>
+              When trained on people <strong><em>without</em></strong> obesity,<br>
+              the model shows <strong><em>poor</em></strong> test performance on people <strong><em>with</em></strong> obesity.
+
+           </p>
+          </div>
+        </div>
+        <!--End Text with Centered Image and Table-->
+        <!-------------------------------------------------------------------------------------------->
+        
+        <!-------------------------------------------------------------------------------------------->
+    
+        <!-------------------------------------------------------------------------------------------->
+        
+        <!--End List of Projects-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Credits-->
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <h2 class="add-top-margin">Publication</h2>
+            <hr>
+            <p class="text">
+              Shibo Zhang, Yuqi Zhao, Dzung Nguyen, Runsheng Xu, Sougata Sen, Josiah Hester, Nabil Alshurafa. 2020. <br>
+              NeckSense: A Multi-Sensor Necklace for Detecting Eating Activities in Free-Living Conditions. <br>
+              Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies. June 2020. Article No.: 72. <br>
+              https://doi.org/10.1145/3397313<br>
+            </p>
+            <p class="text text-small text-italic">
+              @@article{necksense,<br>
+              author = {Zhang, Shibo and Zhao, Yuqi and Nguyen, Dzung Tri and Xu, Runsheng and Sen, Sougata and Hester, Josiah and Alshurafa, Nabil},<br>
+              title = {NeckSense: A Multi-Sensor Necklace for Detecting Eating Activities in Free-Living Conditions},<br>
+              year = {2020},<br>
+              issue_date = {June 2020},<br>
+              publisher = {Association for Computing Machinery},<br>
+              address = {New York, NY, USA},<br>
+              volume = {4},<br>
+              number = {2},<br>
+              url = {https://doi.org/10.1145/3397313},<br>
+              doi = {10.1145/3397313},<br>
+              journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},<br>
+              month = jun,<br>
+              articleno = {72},<br>
+              numpages = {26},<br>
+              keywords = {neck-worn sensor, free-living studies, eating activity detection, human activity recognition, sensor fusion, automated dietary monitoring, wearable}<br>
+              }        
+            </p>
+            <br>
+          </div>
+        </div>
+        <!--End Credits-->
+        <!-------------------------------------------------------------------------------------------->
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <hr>
+            <p class="text text-smallest">Webpage by <a href="http://users.eecs.northwestern.edu/~szh702/">Shibo</a> adapted from <a href="https://github.com/yenchiah/project-website-template">Yen-Chia Hsu</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
