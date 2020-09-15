@@ -34,30 +34,46 @@
             <p class="text">
               <a target="_blank" href="https://www.northwestern.edu/"><img class="image image-wrap-text max-width-70" src="img/NU logo.png"></a>
               <a target="_blank" href="http://www.thehabitslab.com/"><img class="image image-right-wrap-text max-width-70" src="img/Habits lab logo.png"></a>
+              NeckSense: A Multi-Sensor Necklace for Detecting Eating Activities in Free-Living Conditions.<br>
               <a target="_blank" href="http://users.eecs.northwestern.edu/~szh702/">Shibo Zhang,</a>
               <a target="_blank" href="https://www.linkedin.com/in/yuqi-zhao-70758b14a/">Yuqi Zhao,</a>
               <a target="_blank" href="http://users.eecs.northwestern.edu/~dtn419/">Dzung Nguyen,</a>
               <a target="_blank" href="https://scholar.google.com/citations?user=QW6Ro8IAAAAJ&hl=en">Runsheng Xu,</a>             
-              <a target="_blank" href="https://www.cs.dartmouth.edu/~sougata/">Sougata Sen,</a>
-              <a target="_blank" href="http://kamoamoa.eecs.northwestern.edu/">Josiah Hester,</a>
+              <a target="_blank" href="http://sougata-sen.com/">Sougata Sen,</a>
+              <a target="_blank" href="http://kamoamoa.eecs.northwestern.edu/">Josiah Hester,</a><br>
               <a target="_blank" href="http://www.nalshurafa.com/">Nabil Alshurafa</a><br>
               <!-- <a target="_blank" href="javascript:void(0)">Department of Preventive Medicine</a><br> -->
               <!-- <a target="_blank" href="javascript:void(0)">Department of Computer Science</a><br> -->
-              Northwestern University, HABits Lab<br>
-              Chicago, IL, USA<br>
-            <a class="text text-middle" href="http://thehabitslab.com/assets/papers/67.pdf"><strong>[Paper Download]</strong></a><br><br><br><br><br>
+              Northwestern University, Chicago, USA <br>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a class="text text-middle" href="http://thehabitslab.com/assets/papers/67.pdf"><strong>[Paper Download]</strong></a><br><br>
             </p>        
 
           </div>
         
          
 
-
         </div>
         <div class="flex-row">
+
           <div class="flex-item flex-column">
+            <hr style="border-top: 2px dashed black;color:transparent;"/>
                   
             
+          <p class="text">
+          <img class="image image-wrap-text max-width-140" src="img/4.png">
+          <strong>NeckSense</strong> is a novel neck-worn device with multiple embedded sensors<br>
+          &nbsp &nbsp… inferring eating behavior from <strong>contactless</strong> sensors<br>
+          &nbsp &nbsp… targeting the <strong>obesity</strong> problem and tested with people with <strong>obesity</strong><br>
+          &nbsp &nbsp… validated in <strong>real-world</strong> setting using wearable camera for <strong>270 hrs in-the-wild</strong><br>
+          &nbsp &nbsp… <strong>data</strong> and <strong>code</strong> provided to the community
+          </p>
+
+            <video preload controls autoplay loop muted playsinline class="image">
+              <source src="vid/teaser_video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+<!-- 
              <p class="text">
               
               <img class="image image-right-wrap-text max-width-480" src="img/3.png">
@@ -68,24 +84,18 @@
                 Adults: 39.6% of adults are obese.
               <br>
               <br>
-            </p>
+            </p> -->
 
 
           <p class="text">
-          Providing eating-related interventions requires automatic eating detection methods (validated in free-living settings).<br><br>
-          We present the design, implementation, and evaluation of a multi-sensor, low-power necklace, NeckSense, for automatically and unobtrusively capturing fine-grained information about an individual’s eating activity and eating episodes, across an entire waking day in a naturalistic setting. NeckSense fuses and classifies the proximity of the necklace from the chin, the ambient light, the Lean Forward Angle, and the energy signals to determine chewing sequences, a building block of the eating activity. It then clusters the identified chewing sequences to determine eating episodes.<br><br>
+          <!-- Providing eating-related interventions requires automatic eating detection methods (validated in free-living settings).<br><br> -->
+          We present the design, implementation, and evaluation of a multi-sensor, low-power necklace, <strong>NeckSense</strong>, for automatically and unobtrusively capturing fine-grained information about an individual’s eating activity and eating episodes, across an entire waking day in a naturalistic setting.<!--  NeckSense fuses and classifies the proximity of the necklace from the chin, the ambient light, the Lean Forward Angle, and the energy signals to determine chewing sequences, a building block of the eating activity. It then clusters the identified chewing sequences to determine eating episodes. 
+          <br><br>
+          We tested NeckSense on 11 participants with and 9 participants without obesity, across two studies. Overall, our system achieves an F1-score of 81.6% in detecting eating episodes in an exploratory study and 77.1% for episodes even in an all-day-long free-living setting. 
+          <br><br>
+          With more than 15.8 hours of battery life, NeckSense will allow researchers and dietitians to better understand natural chewing and eating behaviors. In the future, researchers and dietitians can use NeckSense to provide appropriate real-time interventions when an eating episode is detected or when problematic eating is identified.<br><br> -->
           </p>
          
-          <p class="text">
-          <img class="image image-wrap-text max-width-140" src="img/4.png">
-          Novel <strong>neck-worn</strong> device with multiple embedded sensors:<br>
-          &nbsp &nbsp… infer eating behavior from <strong>contactless</strong> sensors<br>
-          &nbsp &nbsp… targeting the <strong>obesity</strong> problem and tested with people with <strong>obesity</strong><br>
-          &nbsp &nbsp… validated in <strong>real-world</strong> setting using wearable camera for <strong>270 hrs in-the-wild</strong><br>
-          &nbsp &nbsp… provide <strong>data</strong> and <strong>code</strong> to the community
-          </p>
-
-          
 
           </div>
         </div>
@@ -112,51 +122,23 @@
           <div class="flex-item flex-column">
             <h2 class="add-top-margin">Device and Implementation</h2>
             <hr>
+
+
             <p class="text">          
             <img class="image center ax-width-800" src="img/6.png">
             <br>
             We use multiple sensors to capture eating:&nbsp &nbsp &nbsp &nbsp<br><br>
 
-             <strong>1. Proximity sensor: </strong>to allow us to detect nearby objects without any physical contact by emitting a beam of electromagnetic radiation, and look for changes in the return signal. Because the sensor is oriented towards the chin, changes in the return signal represent the relative distance from the sensor to the chin, and from the signal we can capture the periodicity of the chewing behavior.<br><br>
-            <strong>2. Ambient light sensor:</strong> acts as a proxy to feeding gestures, where the ambient light drops when the users hand approach the mouth.<br><br>
-            <strong>3. IMU sensor:</strong> used to calculate a lean forward angle that allows us to know if a person is leaning forward to take a bite.<br><br>
+             <strong>1. Proximity sensor:</strong> allows us to detect nearby objects without any physical contact. Because the sensor is oriented towards the chin, changes in the return signal represent the distance from the sensor to the chin, from which we can capture the periodicity of chewing behavior.<br>
+            <strong>2. Ambient light sensor:</strong> acts as a proxy to feeding gestures, where the ambient light drops when the users hand approach the mouth.<br>
+            <strong>3. IMU sensor:</strong> calculates a lean forward angle that allows us to know if a person is leaning forward to take a bite.<br>
             Collectively, these sensors are used to detect an eating episode.
             
             </p>
-            <p class="text">
-            <br>
-            Below video contains a use case of NeckSense. <!-- illustrates a use case of NeckSense. -->
-            </p>
+            
           </div>
         </div>
        
-       <!--Start Text with Images and Videos-->
-        <!-- <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Text with Images and Videos (TODO)</h2>
-            <hr>
-            <p class="text">
-              This is a video recording of our experiment.This is a video recording of our experiment.This is a video recording of our experiment.This is a video recording of our experiment.This is a video recording of our experiment.
-            </p>
-          </div>
-        </div> -->
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <video preload controls autoplay loop muted playsinline class="image">
-              <source src="vid/teaser_video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch-2 flex-column">
-            <p class="text">
-            </p>
-          </div>
-        </div>
-        
-        <!--End Text with Images and Videos-->
-
 
         <div class="flex-row">
           <div class="flex-item flex-column">
@@ -166,11 +148,11 @@
             <p class="text">
               <img class="image image-right-wrap-text max-width-400" src="img/8.png"> 
               <br><br><strong>The NeckSense would capture four signals:</strong><br><br>
-              <strong>1.</strong> Chewing periodicity signals<br>
-              <strong>2.</strong> Feeding gesture signals<br>
-              <strong>3.</strong> Bite signals<br>
-              <strong>4.</strong> Energy-based signals <br>
-              <br><br><br><br><br>
+              <strong>1.</strong> Chewing periodicity signal from proximity sensor<br><br>
+              <strong>2.</strong> Energy-based signal from IMU<br><br>
+              <strong>3.</strong> Lean forward angle signal from IMU<br><br>
+              <strong>4.</strong> Feeding gesture signal from ambient light sensor<br>
+              <br><br>
               We use a prominent peak finding algorithm to obtain chewing segments, and use the sensor data to extract features for each segment. <!-- These features included statistical features, frequency-based features as well as periodic subsequence features and time of dayfeature for each segment. --> Then we use an XGBoost classifier to confirm whether the candidate segment is indeed a chewing sequence, and combine them into eating episode prediction.
            </p>            
           </div>
@@ -186,37 +168,52 @@
           <div class="flex-item flex-column">
             <h2 class="add-top-margin">Experiments and Results</h2>
             <hr>
-            
             <p class="text">
-             <strong>We performed the following EXPLORATORY study:</strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              <img class="image image-right-wrap-text center max-width-600" src="img/14.png">
+              <br><br><br>
+              We validated in a free-living study&nbsp;in people with and without&nbsp;<strong>obesity</strong> using a <strong>wearable camera</strong>.
             </p>
-            <img class="image center max-width-600 add-top-margin-small" src="img/9.png">
-            <br><br><br>
-            <p class="text">
-              <strong>We performed the following FREE-LIVING study:</strong>
-            </p>
-            <img class="image center max-width-600 add-top-margin-small" src="img/10.png">
-            <br><br><br>
 
             <p class="text">
-              <strong>The following figures indicate proximity signals at different locations during chewing:</strong>
+             We performed the following <strong>EXPLORATORY</strong> study:
+            </p>
+            <img class="image center max-width-600 add-top-margin-small" src="img/9.png">
+            <p class="text">
+              We performed the following <strong>FREE-LIVING</strong> study:
+            </p>
+            <img class="image center max-width-600 add-top-margin-small" src="img/10.png">
+            <br><br>
+
+            <p class="text">
+              The following figures indicate proximity signals at different locations during chewing:
             </p>
             <img class="image center max-width-800 add-top-margin-small" src="img/12.png">
             <img class="image center max-width-850 add-top-margin-small" src="img/13.png">
 
-            <p class="text">
-             <br><br><strong>We achieved:</strong><br>
-               &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp… <strong>82%</strong> Average F-score in the <strong>exploratory</strong> study.<br>
+              <br><h3>Result:</h3>
+             <!-- <strong>1. We achieved</strong><br>
+              &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp… <strong>82%</strong> Average F-score in the <strong>exploratory</strong> study.<br>
                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp… <strong>77%</strong> Average F-score in the <strong>free-living</strong> study.
-            </p>
+             -->
             
             <p class="text">
-              <img class="image image-right-wrap-text max-width-400" src="img/11.png"> 
-              <br><br>
-              When trained on people <strong><em>without</em></strong> obesity,<br>
-              the model shows <strong><em>poor</em></strong> test performance on people <strong><em>with</em></strong> obesity.
-
+              <img class="image image-right-wrap-text max-width-300" src="img/11.png"> 
+              1. We achieved 82% Average F-score in the exploratory study and 77% Average F-score in the free-living study. 
+              <br>
+              2. When trained on people <strong><em>with</em></strong> obesity,
+              the model shows <strong><em>better</em></strong> test performance on people <strong><em>with</em></strong> obesity than a model trained on people <strong><em>without</em></strong> obesity.
+           </p>                   
+           
+           <p class="text" style="color:purple;font-size:24px;">
+             <img class="image image-wrap-text center max-width-200" src="img/15.png">
+           <br>
+           <b>Let’s make sure we validate our wearables on the people we are designing it for!</b>
+           <br>
+           <br>
+           <br>
            </p>
+           <u><i>If you are interested in purchasing our necklace, please feel free to email us at <a href="mailto:habitslab@northwestern.edu">habitslab@northwestern.edu</a>.</i></u>
+
           </div>
         </div>
         <!--End Text with Centered Image and Table-->
